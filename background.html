@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="screen-header">
+      <a href="index.html">
+        <span class="screen-header__title">Home</span>
+      </a>
+      <div id="weather-div__box">
+        <span></span>
+        <span></span>
+      </div>
+      <div class="screen-header__item">
+        <a href="background.html">
+          <span>BackGround</span>
+        </a>
+
+        <a href="playlist.html">
+          <span>PlayList</span>
+        </a>
+
+        <a href="todolist.html">
+          <span>To Do List</span>
+        </a>
+
+        <a href="credits.html">
+          <span>Credits</span>
+        </a>
+      </div>
+    </header>
+
+    <div class="background__image-div">
+      <img class="background__image" src="" />
+    </div>
+
+    <div class="background__center__item">
+      <div class="background-clock">
+        <div class="background-clock__item">
+          <span class="background-clock__main">00 : 00</span>
+          <span class="background-clock__day">f</span>
+        </div>
+      </div>
+
+      <div class="username-div">
+        <form class="hidden" id="login-form">
+          <input required maxlength="15" type="text" placeholder="What is your name?" />
+          <div id="login-form-submit">
+            <input type="submit" value="Log in" />
+          </div>
+        </form>
+      </div>
+
+      <div id="username-div__box">
+        <h1 id="greeting" class="hidden"></h1>
+        <h3 id="secondGreeting" class="hidden"></h3>
+      </div>
+    </div>
+
+    <div class="playlist__data">
+      <div class="playlist__data__content">
+        <audio src="music/imase - NIGHT DANCER.mp3" id="audio" preload="metadata"></audio>
+        <div class="playlist__song__data">
+          <img id="playlist__img" src="images/music-cover/imase - NIGHT DANCER.png" />
+          <div class="playlist__song__info">
+            <span class="playlist__song__title">Night Dancer</span>
+            <span class="playlist__song__artist">Imase</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="playlist__bar__content">
+        <div class="playlist__bar">
+          <div class="playlist__bar__info" style="width: 0%"></div>
+        </div>
+
+        <span class="playlist__timesize"></span>
+      </div>
+
+      <div class="playlist__icon">
+        <i class="fa-solid fa-play" id="music__play-btn" onclick="playbtnClick()"></i>
+        <i class="fa-solid fa-pause" id="music__pause-btn" onclick="pausebtnClick()"></i>
+        <i class="fa-solid fa-forward" id="music__right" onclick="rightclick()"></i>
+      </div>
+    </div>
+
+    <script src="js/weather.js"></script>
+    <script src="js/backgroundImg.js"></script>
+    <script src="js/username.js"></script>
+    <script src="js/Clock.js"></script>
+    <script src="js/playlist.js"></script>
+    <script src="https://kit.fontawesome.com/01c69344c5.js" crossorigin="anonymous"></script>
+  </body>
+</html>

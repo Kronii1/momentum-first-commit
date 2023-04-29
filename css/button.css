@@ -1,0 +1,31 @@
+@keyframes mainTitleButtonAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.main__timeline__button {
+    display: flex;
+    position: absolute;
+    width: 180px;
+    top: 130%;
+    left: 50%;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    padding: 5px 30px;
+    background-color: white;
+    justify-content: center;
+    border-radius: 50px;
+    font-weight: 600;
+    transform: translate(-50%, -50%);
+    animation: mainTitleButtonAnimation 3.5s ease-in-out infinite;
+}

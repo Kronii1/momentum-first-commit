@@ -1,0 +1,11 @@
+.main__body {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main__body__title {
+    font-size: 60px;
+    font-weight: 600;
+}

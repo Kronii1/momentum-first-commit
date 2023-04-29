@@ -1,0 +1,70 @@
+.playlist__data {
+    opacity: 1;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.playlist__data__content {
+    margin-bottom: 10px;
+}
+
+.playlist__song__data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playlist__song__data img {
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+}
+
+.playlist__song__info {
+    margin-left: 50px;
+}
+
+.playlist__song__artist,
+.playlist__song__title {
+    margin: 20px 0px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 플레이리스트 아이콘 */
+.playlist__icon {
+    justify-content: center;
+    align-items: center;
+    margin: 15px 10px;
+    display: flex;
+}
+
+.playlist__icon i {
+    margin: 0px 10px;
+    font-size: 25px;
+}
+
+
+/* 플레이리스트 시간 바 */
+.playlist__bar__content {
+    display: flex;
+    align-items: center;
+}
+
+.playlist__bar {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    margin-right: 10px;
+}
+
+.playlist__bar__info {
+    height: 3px;
+    background-color: tomato;
+    border-radius: 5px;
+}

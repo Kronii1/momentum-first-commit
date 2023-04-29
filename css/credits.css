@@ -1,0 +1,49 @@
+/* about */
+@keyframes aboutAnimation {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.about-main {
+    position: absolute;
+    top: 25%;
+    left: 6%;
+    animation: aboutAnimation 1.5s ease-in;
+}
+
+.about-main__title {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.about-main__div {
+    margin-top: 25px;
+    width: 45%;
+}
+
+.abouts {
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+/* credit */
+.credit-nav {
+    position: absolute;
+    bottom: 80px;
+    right: 60px;
+}
+
+.credit-nav__font {
+    opacity: 0.6;
+}
+
+.credit-nav div {
+    padding: 3px;
+}

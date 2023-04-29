@@ -1,0 +1,38 @@
+@keyframes slide-in-bck-center {
+    0% {
+        transform: translateZ(600px);
+        transform: translateZ(600px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+
+.background-clock {
+    position: absolute;
+    top: 30%;
+    right: 44%;
+    animation: slide-in-bck-center 3s ease-out;
+}
+
+.background-clock__item {
+    text-align: center;
+}
+
+.background-clock__item span {
+    display: block;
+}
+
+.background-clock__item span:first-child {
+    font-size: 80px;
+}
+
+.background-clock__item span:last-child {
+    padding-top: 15px;
+    font-size: 30px;
+}
